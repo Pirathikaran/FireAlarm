@@ -1,0 +1,21 @@
+.card-item{
+    margin: 10px;
+    padding:40px;
+    background-color: rgb(238, 185, 50);
+    font-weight: 400;
+  }
+
+.card-title{
+    text-align: center;
+    color: crimson;
+    font-weight: 500;
+}
+
+.status{
+    text-align: center;
+    font-weight: 700;
+}
+
+.floor-text{
+    margin-top: 10px;
+}
