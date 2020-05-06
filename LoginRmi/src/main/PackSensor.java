@@ -39,15 +39,15 @@ public class PackSensor extends UnicastRemoteObject implements PackSensorI{
                 Co2Pack co1=new Co2Pack();
                 
                 
-                t1.schedule(s1, 0, 5000);
-                t1.schedule(co1, 0, 5000);
+                t1.schedule(s1, 0, 15000);
+                t1.schedule(co1, 0, 15000);
                 
                 for(; ;) {
                     
                     System.out.println("the sensor smoke value = "+s1.setNum());
                     System.out.println("the co2 value = " +co1.setNum());
                     try {
-                        Thread.sleep(5000);
+                        Thread.sleep(15000);
                     } catch (InterruptedException ex) {
                         Logger.getLogger(PackSensor.class.getName()).log(Level.SEVERE, null, ex);
                     }
